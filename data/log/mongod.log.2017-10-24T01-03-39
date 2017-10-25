@@ -1,0 +1,81 @@
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten] MongoDB starting : pid=3077 port=27017 dbpath=/Users/rice/documents/nodehome/data/db 64-bit host=bogon
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten] db version v3.4.9
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2l  25 May 2017
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten] allocator: system
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten] modules: none
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten] build environment:
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-22T23:45:19.675+0800 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { port: 27017 }, processManagement: { fork: true }, storage: { dbPath: "/Users/rice/documents/nodehome/data/db" }, systemLog: { destination: "file", path: "/Users/rice/documents/nodehome/data/log/mongod.log" } }
+2017-10-22T23:45:19.676+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-22T23:45:20.002+0800 I CONTROL  [initandlisten] 
+2017-10-22T23:45:20.002+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-22T23:45:20.002+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-22T23:45:20.002+0800 I CONTROL  [initandlisten] 
+2017-10-22T23:45:20.002+0800 I CONTROL  [initandlisten] 
+2017-10-22T23:45:20.002+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-10-22T23:45:20.108+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/rice/documents/nodehome/data/db/diagnostic.data'
+2017-10-22T23:45:20.289+0800 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-10-22T23:45:20.289+0800 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-10-22T23:45:20.302+0800 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2017-10-22T23:45:20.302+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2017-10-22T23:45:20.303+0800 I NETWORK  [thread1] waiting for connections on port 27017
+2017-10-22T23:55:58.521+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56890 #1 (1 connection now open)
+2017-10-22T23:55:58.521+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:56890 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-22T23:58:29.607+0800 I -        [conn1] end connection 127.0.0.1:56890 (1 connection now open)
+2017-10-22T23:58:34.651+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56898 #2 (1 connection now open)
+2017-10-22T23:58:34.651+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:56898 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:04:11.060+0800 I -        [conn2] end connection 127.0.0.1:56898 (1 connection now open)
+2017-10-23T00:15:20.584+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57533 #3 (1 connection now open)
+2017-10-23T00:15:20.585+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:57533 conn3: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:15:20.615+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57534 #4 (2 connections now open)
+2017-10-23T00:15:20.615+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:57534 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:15:35.168+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57537 #5 (3 connections now open)
+2017-10-23T00:15:35.169+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:57537 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:16:43.535+0800 I -        [conn3] end connection 127.0.0.1:57533 (3 connections now open)
+2017-10-23T00:16:43.535+0800 I -        [conn4] end connection 127.0.0.1:57534 (3 connections now open)
+2017-10-23T00:16:53.148+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57543 #6 (2 connections now open)
+2017-10-23T00:16:53.148+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:57543 conn6: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:16:53.177+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57544 #7 (3 connections now open)
+2017-10-23T00:16:53.177+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:57544 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:17:49.267+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57548 #8 (4 connections now open)
+2017-10-23T00:17:49.267+0800 I NETWORK  [conn8] received client metadata from 127.0.0.1:57548 conn8: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:17:49.295+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57549 #9 (5 connections now open)
+2017-10-23T00:17:49.295+0800 I NETWORK  [conn9] received client metadata from 127.0.0.1:57549 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:18:24.144+0800 I COMMAND  [conn6] CMD: drop nodeblog.collection
+2017-10-23T00:19:09.262+0800 I -        [conn8] end connection 127.0.0.1:57548 (5 connections now open)
+2017-10-23T00:19:09.263+0800 I -        [conn9] end connection 127.0.0.1:57549 (4 connections now open)
+2017-10-23T00:20:16.819+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57560 #10 (4 connections now open)
+2017-10-23T00:20:16.819+0800 I NETWORK  [conn10] received client metadata from 127.0.0.1:57560 conn10: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:20:16.848+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57561 #11 (5 connections now open)
+2017-10-23T00:20:16.848+0800 I NETWORK  [conn11] received client metadata from 127.0.0.1:57561 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:20:25.569+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57562 #12 (6 connections now open)
+2017-10-23T00:20:25.571+0800 I NETWORK  [conn12] received client metadata from 127.0.0.1:57562 conn12: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:20:25.599+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57563 #13 (7 connections now open)
+2017-10-23T00:20:25.599+0800 I NETWORK  [conn13] received client metadata from 127.0.0.1:57563 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:20:27.587+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57564 #14 (8 connections now open)
+2017-10-23T00:20:27.587+0800 I NETWORK  [conn14] received client metadata from 127.0.0.1:57564 conn14: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:20:27.615+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57565 #15 (9 connections now open)
+2017-10-23T00:20:27.616+0800 I NETWORK  [conn15] received client metadata from 127.0.0.1:57565 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:20:30.951+0800 I -        [conn12] end connection 127.0.0.1:57562 (9 connections now open)
+2017-10-23T00:20:30.952+0800 I -        [conn13] end connection 127.0.0.1:57563 (8 connections now open)
+2017-10-23T00:20:31.614+0800 I -        [conn14] end connection 127.0.0.1:57564 (7 connections now open)
+2017-10-23T00:20:31.615+0800 I -        [conn15] end connection 127.0.0.1:57565 (6 connections now open)
+2017-10-23T00:20:34.835+0800 I -        [conn10] end connection 127.0.0.1:57560 (5 connections now open)
+2017-10-23T00:20:34.836+0800 I -        [conn11] end connection 127.0.0.1:57561 (4 connections now open)
+2017-10-23T00:20:37.327+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57566 #16 (4 connections now open)
+2017-10-23T00:20:37.327+0800 I NETWORK  [conn16] received client metadata from 127.0.0.1:57566 conn16: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:20:37.356+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:57567 #17 (5 connections now open)
+2017-10-23T00:20:37.356+0800 I NETWORK  [conn17] received client metadata from 127.0.0.1:57567 conn17: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:50:28.931+0800 I -        [conn5] end connection 127.0.0.1:57537 (5 connections now open)
+2017-10-23T00:51:41.859+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58138 #18 (5 connections now open)
+2017-10-23T00:51:41.860+0800 I NETWORK  [conn18] received client metadata from 127.0.0.1:58138 conn18: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:51:41.887+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:58139 #19 (6 connections now open)
+2017-10-23T00:51:41.887+0800 I NETWORK  [conn19] received client metadata from 127.0.0.1:58139 conn19: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-23T00:51:54.112+0800 I -        [conn18] end connection 127.0.0.1:58138 (6 connections now open)
+2017-10-23T00:51:54.113+0800 I -        [conn19] end connection 127.0.0.1:58139 (5 connections now open)
+2017-10-23T03:31:38.560+0800 I -        [conn16] end connection 127.0.0.1:57566 (4 connections now open)
+2017-10-23T03:31:38.564+0800 I -        [conn17] end connection 127.0.0.1:57567 (3 connections now open)
+2017-10-23T03:31:38.582+0800 I -        [conn7] end connection 127.0.0.1:57544 (2 connections now open)
+2017-10-23T03:31:38.582+0800 I -        [conn6] end connection 127.0.0.1:57543 (2 connections now open)
