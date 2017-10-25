@@ -34,6 +34,18 @@ router.post('/post_img1', upload.fields([{ name: 'avatar', maxCount: 2}, { name:
   res.end("upload success!");
 });
 
+router.get('/login', function(req, res, next) {
+  res.render("login");
+});
+
+
+router.post('/login', function(req, res, next) {
+
+  
+  
+  req.session.userName=req.body.userName
+
+  res.redirect("/");
+});
 module.exports = router;
 
-//http://www.cnblogs.com/chyingp/p/express-multer-file-upload.html
