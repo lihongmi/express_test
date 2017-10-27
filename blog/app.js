@@ -26,7 +26,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(session({
-  secret: 'shituketang'
+  secret: 'shituketang',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { maxAge: 60000 }
 }))
 
 app.use('/', index);

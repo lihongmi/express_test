@@ -1,44 +1,31 @@
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten] MongoDB starting : pid=1127 port=27017 dbpath=/Users/rice/documents/nodehome/data/db 64-bit host=lihongmideMacBook-Pro.local
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten] db version v3.4.9
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2l  25 May 2017
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten] allocator: system
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten] modules: none
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten] build environment:
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten]     distarch: x86_64
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten]     target_arch: x86_64
-2017-10-24T09:03:39.592+0800 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { port: 27017 }, processManagement: { fork: true }, storage: { dbPath: "/Users/rice/documents/nodehome/data/db" }, systemLog: { destination: "file", path: "/Users/rice/documents/nodehome/data/log/mongod.log" } }
-2017-10-24T09:03:39.592+0800 W -        [initandlisten] Detected unclean shutdown - /Users/rice/documents/nodehome/data/db/mongod.lock is not empty.
-2017-10-24T09:03:39.593+0800 I -        [initandlisten] Detected data files in /Users/rice/documents/nodehome/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
-2017-10-24T09:03:39.593+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
-2017-10-24T09:03:39.593+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
-2017-10-24T09:03:40.176+0800 I CONTROL  [initandlisten] 
-2017-10-24T09:03:40.176+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
-2017-10-24T09:03:40.176+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
-2017-10-24T09:03:40.176+0800 I CONTROL  [initandlisten] 
-2017-10-24T09:03:40.176+0800 I CONTROL  [initandlisten] 
-2017-10-24T09:03:40.176+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
-2017-10-24T09:03:40.213+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/rice/documents/nodehome/data/db/diagnostic.data'
-2017-10-24T09:03:40.214+0800 I NETWORK  [thread1] waiting for connections on port 27017
-2017-10-24T09:03:41.011+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
-2017-10-24T09:04:07.671+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53149 #1 (1 connection now open)
-2017-10-24T09:04:07.672+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:53149 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
-2017-10-24T09:08:01.521+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53156 #2 (2 connections now open)
-2017-10-24T09:08:01.521+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:53156 conn2: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
-2017-10-24T09:08:01.580+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53157 #3 (3 connections now open)
-2017-10-24T09:08:01.580+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:53157 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
-2017-10-24T09:08:12.478+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53158 #4 (4 connections now open)
-2017-10-24T09:08:12.478+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:53158 conn4: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
-2017-10-24T09:08:12.507+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53159 #5 (5 connections now open)
-2017-10-24T09:08:12.508+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:53159 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
-2017-10-24T09:08:15.753+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53160 #6 (6 connections now open)
-2017-10-24T09:08:15.754+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:53160 conn6: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
-2017-10-24T09:08:15.782+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:53161 #7 (7 connections now open)
-2017-10-24T09:08:15.782+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:53161 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
-2017-10-24T09:08:22.417+0800 I -        [conn6] end connection 127.0.0.1:53160 (7 connections now open)
-2017-10-24T09:08:22.418+0800 I -        [conn7] end connection 127.0.0.1:53161 (6 connections now open)
-2017-10-24T09:08:28.312+0800 I -        [conn4] end connection 127.0.0.1:53158 (5 connections now open)
-2017-10-24T09:08:28.313+0800 I -        [conn5] end connection 127.0.0.1:53159 (4 connections now open)
-2017-10-24T13:58:04.789+0800 I -        [conn1] end connection 127.0.0.1:53149 (3 connections now open)
-2017-10-24T20:48:30.718+0800 I -        [conn2] end connection 127.0.0.1:53156 (2 connections now open)
-2017-10-24T20:48:30.718+0800 I -        [conn3] end connection 127.0.0.1:53157 (2 connections now open)
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten] MongoDB starting : pid=845 port=27017 dbpath=/Users/rice/documents/nodehome/data/db 64-bit host=lihongmideMacBook-Pro.local
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten] db version v3.4.9
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2l  25 May 2017
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten] allocator: system
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten] modules: none
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten] build environment:
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-27T23:15:54.373+0800 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { port: 27017 }, processManagement: { fork: true }, storage: { dbPath: "/Users/rice/documents/nodehome/data/db" }, systemLog: { destination: "file", path: "/Users/rice/documents/nodehome/data/log/mongod.log" } }
+2017-10-27T23:15:54.373+0800 W -        [initandlisten] Detected unclean shutdown - /Users/rice/documents/nodehome/data/db/mongod.lock is not empty.
+2017-10-27T23:15:54.374+0800 I -        [initandlisten] Detected data files in /Users/rice/documents/nodehome/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-10-27T23:15:54.374+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-10-27T23:15:54.374+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-27T23:15:54.878+0800 I CONTROL  [initandlisten] 
+2017-10-27T23:15:54.878+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-27T23:15:54.878+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-27T23:15:54.878+0800 I CONTROL  [initandlisten] 
+2017-10-27T23:15:54.878+0800 I CONTROL  [initandlisten] 
+2017-10-27T23:15:54.878+0800 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-10-27T23:15:54.903+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/rice/documents/nodehome/data/db/diagnostic.data'
+2017-10-27T23:15:54.903+0800 I NETWORK  [thread1] waiting for connections on port 27017
+2017-10-27T23:15:55.023+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-10-27T23:16:12.100+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52257 #1 (1 connection now open)
+2017-10-27T23:16:12.101+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:52257 conn1: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-27T23:16:12.159+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52258 #2 (2 connections now open)
+2017-10-27T23:16:12.159+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:52258 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-27T23:16:15.811+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52259 #3 (3 connections now open)
+2017-10-27T23:16:15.811+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:52259 conn3: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-10-27T23:16:15.839+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:52260 #4 (4 connections now open)
+2017-10-27T23:16:15.840+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:52260 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
